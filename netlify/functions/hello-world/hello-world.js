@@ -1,7 +1,7 @@
 const handler = async (event) => {
   try {
     const drinks = ["coffee", "tea", "beer", "wine", "water", "juice"];
-    const drink = drinks[Math.floor(Math.random() * items.length)];
+    const drink = drinks[Math.floor(Math.random() * drinks.length)];
 
     return {
       statusCode: 200,
