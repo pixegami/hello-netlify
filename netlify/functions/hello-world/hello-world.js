@@ -1,11 +1,10 @@
 const handler = async (event) => {
   try {
-    const drinks = ["coffee", "tea", "beer", "wine", "water", "juice"];
-    const drink = drinks[Math.floor(Math.random() * drinks.length)];
+    const message = "Hello world!";
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `You should drink some ${drink}` }),
+      body: JSON.stringify({ message: message }),
     };
   } catch (error) {
     return { statusCode: 500, body: error.toString() };
